@@ -1,5 +1,8 @@
+modules = ["java-graalvm22.3", "web"]
+
 [nix]
 channel = "stable-25_05"
 
-[agent]
-expertMode = true
+[[ports]]
+localPort = 8082
+externalPort = 80
