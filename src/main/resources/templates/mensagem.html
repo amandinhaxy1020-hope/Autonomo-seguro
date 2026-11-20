@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analisar mensagem - Autônomo Seguro</title>
+<link rel="stylesheet" th:href="@{/css/estilo.css}">
+</head>
+<body>
+<header th:replace="~{fragmentos :: topo}"></header>
+<main class="conteudo">
+<h1>Analisar uma mensagem</h1>
+<p class="lead">Cole aqui o texto que você recebeu. A análise acontece no seu celular: nada é enviado nem guardado.</p>
+<label for="texto" class="rotulo">Mensagem recebida</label>
+<textarea id="texto" class="campo" rows="8" placeholder="Cole a mensagem aqui"></textarea>
+<div class="acoes">
+<button id="analisar" class="botao botao-principal" type="button">Analisar mensagem</button>
+<button id="limpar" class="botao" type="button">Limpar</button>
+</div>
+<section id="resultado" class="resultado" hidden aria-live="polite"></section>
+<a class="botao" th:href="@{/}">← Voltar ao início</a>
+</main>
+<footer th:replace="~{fragmentos :: rodape}"></footer>
+<script charset="UTF-8" th:src="@{/js/mensagem.js}"></script>
+</body>
+</html>

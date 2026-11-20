@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Autônomo Seguro</title>
+<link rel="stylesheet" th:href="@{/css/estilo.css}">
 </head>
-<body style="font-family: Arial, sans-serif; padding: 24px;">
-<h1>Autônomo Seguro</h1>
-<p>Projeto funcionando!</p>
+<body>
+<header th:replace="~{fragmentos :: topo}"></header>
+<main class="conteudo">
+<h1>Proteja seu celular contra golpes</h1>
+<p class="lead">Recebeu uma mensagem ou um link estranho? Confira aqui antes de clicar ou responder.</p>
+<nav class="menu">
+<a class="botao botao-principal" th:href="@{/mensagem}">✉️ Analisar uma mensagem</a>
+<a class="botao botao-principal" th:href="@{/link}">🔗 Analisar um link</a>
+<a class="botao" th:href="@{/guia}">📖 Guia de prevenção</a>
+<a class="botao" th:href="@{/checklist}">✅ Checklist de proteção no Android</a>
+<a class="botao" th:href="@{/ajuda}">❓ Ajuda</a>
+</nav>
+</main>
+<footer th:replace="~{fragmentos :: rodape}"></footer>
 </body>
 </html>

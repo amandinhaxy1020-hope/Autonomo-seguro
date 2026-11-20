@@ -1,3 +1,4 @@
+run = "mvn spring-boot:run"
 modules = ["java-graalvm22.3", "web"]
 
 [nix]
@@ -6,3 +7,10 @@ channel = "stable-25_05"
 [[ports]]
 localPort = 8082
 externalPort = 80
+
+[deployment]
+deploymentTarget = "cloudrun"
+build = ["sh", "-c", "mvn clean package -DskipTests"]
+
+[deployment.run]
+args = ["sh", "-c", "java -jar target/autonomo-seguro-0.0.1-SNAPSHOT.jar"]
