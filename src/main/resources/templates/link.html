@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analisar link - Autônomo Seguro</title>
+<link rel="stylesheet" th:href="@{/css/estilo.css}">
+</head>
+<body>
+<header th:replace="~{fragmentos :: topo}"></header>
+<main class="conteudo">
+<h1>Analisar um link</h1>
+<p class="lead">Cole só o endereço do link que você recebeu. A análise acontece no seu celular: nada é enviado nem guardado.</p>
+<label for="endereco" class="rotulo">Endereço do link</label>
+<input id="endereco" class="campo" type="text" inputmode="url" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Cole o link aqui">
+<div class="acoes">
+<button id="analisar" class="botao botao-principal" type="button">Analisar link</button>
+<button id="limpar" class="botao" type="button">Limpar</button>
+</div>
+<section id="resultado" class="resultado" hidden aria-live="polite"></section>
+<a class="botao" th:href="@{/}">← Voltar ao início</a>
+</main>
+<footer th:replace="~{fragmentos :: rodape}"></footer>
+<script charset="UTF-8" th:src="@{/js/link.js}"></script>
+</body>
+</html>

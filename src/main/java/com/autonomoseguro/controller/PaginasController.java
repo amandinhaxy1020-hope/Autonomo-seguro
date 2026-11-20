@@ -18,9 +18,8 @@ public class PaginasController {
 	}
 
 	@GetMapping("/link")
-	public String link(Model model) {
-		model.addAttribute("titulo", "Analisar link");
-		return "em-breve";
+	public String link() {
+		return "link";
 	}
 
 	@GetMapping("/guia")

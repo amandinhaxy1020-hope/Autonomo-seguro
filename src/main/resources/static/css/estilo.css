@@ -68,3 +68,4 @@ h1 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; font-s
 .nivel-baixo h2 { color: #1b4332; }
 
 .rodape { text-align: center; font-size: 15px; padding: 18px; color: var(--texto-suave); }
+.resultado p, .resultado li { overflow-wrap: anywhere; }
