@@ -69,3 +69,14 @@ h1 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; font-s
 
 .rodape { text-align: center; font-size: 15px; padding: 18px; color: var(--texto-suave); }
 .resultado p, .resultado li { overflow-wrap: anywhere; }
+.cartao { background: #ffffff; border: 1.5px solid #d5e5db; border-radius: 14px; padding: 18px; margin-bottom: 16px; }
+.cartao h2 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; font-size: 22px; color: var(--verde-escuro); margin: 0 0 8px; }
+.cartao p { margin: 8px 0 0; }
+.cartao ol, .cartao ul { padding-left: 22px; margin: 8px 0 0; }
+.cartao li { margin-bottom: 8px; }
+.dica { background: var(--verde-claro); border-radius: 10px; padding: 12px; }
+.check-item { display: flex; gap: 14px; align-items: flex-start; background: #ffffff; border: 1.5px solid #d5e5db; border-radius: 14px; padding: 16px; margin-bottom: 12px; cursor: pointer; }
+.check-item input { width: 28px; height: 28px; flex-shrink: 0; margin-top: 2px; accent-color: var(--verde); }
+.check-item .detalhe { color: var(--texto-suave); font-size: 16px; }
+.contagem { font-weight: bold; color: var(--verde-escuro); margin: 0 0 16px; }
+.conteudo > .botao { margin-top: 8px; }

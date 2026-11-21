@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajuda - Autônomo Seguro</title>
+<link rel="stylesheet" th:href="@{/css/estilo.css}">
+</head>
+<body>
+<header th:replace="~{fragmentos :: topo}"></header>
+<main class="conteudo">
+<h1>Ajuda</h1>
+
+<section class="cartao">
+<h2>Como usar</h2>
+<ol>
+<li>Escolha o que quer conferir: uma mensagem ou um link.</li>
+<li>Cole o texto ou o endereço e toque em analisar.</li>
+<li>Leia o resultado e siga o que diz em "O que fazer".</li>
+</ol>
+</section>
+
+<section class="cartao">
+<h2>O site guarda o que eu colo?</h2>
+<p>Não. A análise acontece no seu próprio celular. A mensagem e o link não são enviados nem guardados em nenhum lugar.</p>
+</section>
+
+<section class="cartao">
+<h2>"Poucos sinais" quer dizer que é seguro?</h2>
+<p>Não. O site procura sinais conhecidos de golpe, mas golpes novos podem passar. Se algo parecer estranho, confirme com a pessoa ou a empresa por outro caminho.</p>
+</section>
+
+<section class="cartao">
+<h2>Caí em um golpe, e agora?</h2>
+<ol>
+<li>Avise o seu banco na hora, pelo aplicativo ou pelo número oficial, e peça o bloqueio e a devolução do Pix. Quanto mais rápido, maior a chance de recuperar.</li>
+<li>Troque as senhas do banco, do e-mail e do WhatsApp.</li>
+<li>Se o WhatsApp foi clonado, avise seus contatos para não mandarem dinheiro.</li>
+<li>Guarde prints e comprovantes e registre um boletim de ocorrência.</li>
+</ol>
+</section>
+
+<section class="cartao">
+<h2>Sobre este projeto</h2>
+<p>O Autônomo Seguro é um projeto de extensão universitária que ajuda eletricistas e outros trabalhadores autônomos a reconhecer golpes digitais. Ele não substitui o seu cuidado: na dúvida, confirme antes de agir.</p>
+</section>
+
+<a class="botao" th:href="@{/}">← Voltar ao início</a>
+</main>
+<footer th:replace="~{fragmentos :: rodape}"></footer>
+</body>
+</html>

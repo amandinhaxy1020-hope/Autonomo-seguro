@@ -1,7 +1,6 @@
 package com.autonomoseguro.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -23,21 +22,18 @@ public class PaginasController {
 	}
 
 	@GetMapping("/guia")
-	public String guia(Model model) {
-		model.addAttribute("titulo", "Guia de prevenção");
-		return "em-breve";
+	public String guia() {
+		return "guia";
 	}
 
 	@GetMapping("/checklist")
-	public String checklist(Model model) {
-		model.addAttribute("titulo", "Checklist de proteção no Android");
-		return "em-breve";
+	public String checklist() {
+		return "checklist";
 	}
 
 	@GetMapping("/ajuda")
-	public String ajuda(Model model) {
-		model.addAttribute("titulo", "Ajuda");
-		return "em-breve";
+	public String ajuda() {
+		return "ajuda";
 	}
 
 }

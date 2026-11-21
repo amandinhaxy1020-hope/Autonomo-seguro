@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checklist de proteção - Autônomo Seguro</title>
+<link rel="stylesheet" th:href="@{/css/estilo.css}">
+</head>
+<body>
+<header th:replace="~{fragmentos :: topo}"></header>
+<main class="conteudo">
+<h1>Checklist de proteção no Android</h1>
+<p class="lead">Confira seu celular, um item de cada vez. Os nomes dos menus mudam conforme a marca: use a lupa de busca das Configurações.</p>
+<p id="contagem" class="contagem" aria-live="polite"></p>
+
+<label class="check-item"><input type="checkbox"><span><strong>Bloqueio de tela forte</strong><br><span class="detalhe">Use PIN, senha ou digital. Evite padrão fácil e data de nascimento.</span></span></label>
+<label class="check-item"><input type="checkbox"><span><strong>Google Play Protect ligado</strong><br><span class="detalhe">Na Play Store, toque na sua foto e abra Play Protect.</span></span></label>
+<label class="check-item"><input type="checkbox"><span><strong>Só instalar apps da Play Store</strong><br><span class="detalhe">Nunca instale arquivos ".apk" que chegam por mensagem.</span></span></label>
+<label class="check-item"><input type="checkbox"><span><strong>Bloquear "instalar apps desconhecidos"</strong><br><span class="detalhe">Procure esse nome na busca das Configurações e deixe desligado para o WhatsApp e o navegador.</span></span></label>
+<label class="check-item"><input type="checkbox"><span><strong>Confirmação em duas etapas no WhatsApp</strong><br><span class="detalhe">WhatsApp, Configurações, Conta, Confirmação em duas etapas.</span></span></label>
+<label class="check-item"><input type="checkbox"><span><strong>Confirmação em duas etapas na conta Google</strong><br><span class="detalhe">Protege seu e-mail e os dados do celular.</span></span></label>
+<label class="check-item"><input type="checkbox"><span><strong>Conferir os apps de Acessibilidade</strong><br><span class="detalhe">Em Configurações, Acessibilidade, deixe ligados só os apps que você conhece. Golpistas usam isso para controlar o celular.</span></span></label>
+<label class="check-item"><input type="checkbox"><span><strong>Manter Android e apps atualizados</strong><br><span class="detalhe">As atualizações corrigem falhas que os golpistas exploram.</span></span></label>
+<label class="check-item"><input type="checkbox"><span><strong>Reduzir o limite do Pix</strong><br><span class="detalhe">No aplicativo do banco, diminua o limite, principalmente o da noite.</span></span></label>
+<label class="check-item"><input type="checkbox"><span><strong>Ligar o "Encontrar meu dispositivo"</strong><br><span class="detalhe">Permite localizar e bloquear o celular se ele for perdido ou roubado.</span></span></label>
+
+<a class="botao" th:href="@{/}">← Voltar ao início</a>
+</main>
+<footer th:replace="~{fragmentos :: rodape}"></footer>
+<script charset="UTF-8" th:src="@{/js/checklist.js}"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia de prevenção - Autônomo Seguro</title>
+<link rel="stylesheet" th:href="@{/css/estilo.css}">
+</head>
+<body>
+<header th:replace="~{fragmentos :: topo}"></header>
+<main class="conteudo">
+<h1>Guia de prevenção</h1>
+<p class="lead">Os golpes mais comuns contra eletricistas e outros autônomos, e como se proteger de cada um.</p>
+
+<section class="cartao">
+<h2>1. Falso comprovante de Pix</h2>
+<p>O "cliente" manda um print dizendo que já pagou. O dinheiro não caiu, mas ele insiste e cobra o serviço ou o material.</p>
+<p class="dica"><strong>Como se proteger:</strong> só considere pago o que aparece no extrato do aplicativo do seu banco. Print e comprovante não valem como pagamento.</p>
+</section>
+
+<section class="cartao">
+<h2>2. "Paguei a mais, devolve a diferença"</h2>
+<p>O golpista diz que o Pix saiu com valor errado e pede que você devolva uma parte. Muitas vezes o pagamento original nem existe.</p>
+<p class="dica"><strong>Como se proteger:</strong> confira o extrato antes de devolver qualquer valor. Se o dinheiro realmente caiu a mais, o próprio banco faz a devolução, sem você mandar Pix.</p>
+</section>
+
+<section class="cartao">
+<h2>3. Orçamento falso e taxa adiantada</h2>
+<p>Alguém pede um orçamento grande e, antes de fechar, pede que você pague uma "taxa", compre material de um "fornecedor indicado" ou adiante um valor para "liberar" o pagamento.</p>
+<p class="dica"><strong>Como se proteger:</strong> cliente de verdade não pede dinheiro seu para liberar serviço. Compre material só em lojas que você já conhece.</p>
+</section>
+
+<section class="cartao">
+<h2>4. "Mudei de número"</h2>
+<p>Chega uma mensagem de um número novo, com a foto de um parente ou conhecido, pedindo ajuda urgente ou um Pix.</p>
+<p class="dica"><strong>Como se proteger:</strong> ligue para a pessoa no número antigo antes de responder ou pagar. Peça uma chamada de voz ou vídeo.</p>
+</section>
+
+<section class="cartao">
+<h2>5. Clonagem do WhatsApp</h2>
+<p>Alguém pede o código de 6 dígitos que chegou por SMS, dizendo que foi enviado "por engano". Com esse código, o golpista assume o seu WhatsApp e pede dinheiro aos seus contatos.</p>
+<p class="dica"><strong>Como se proteger:</strong> nunca passe esse código para ninguém. Ative a confirmação em duas etapas (veja o checklist).</p>
+</section>
+
+<section class="cartao">
+<h2>6. Falso suporte do banco ou da maquininha</h2>
+<p>Ligação ou mensagem dizendo ser do banco ou da empresa da maquininha, com pressa, pedindo senha, códigos ou que você instale um aplicativo "de segurança".</p>
+<p class="dica"><strong>Como se proteger:</strong> desligue e ligue você mesmo para o número que está no cartão ou no aplicativo oficial. Banco não pede senha nem código.</p>
+</section>
+
+<section class="cartao">
+<h2>7. Boleto falso ou "conta nova"</h2>
+<p>Um fornecedor "avisa" que mudou de conta ou manda um boleto com dados alterados, e o pagamento vai para o golpista.</p>
+<p class="dica"><strong>Como se proteger:</strong> antes de pagar, confira o nome do beneficiário no aplicativo do banco. Se houver mudança de conta, confirme por telefone com o fornecedor.</p>
+</section>
+
+<section class="cartao">
+<h2>Regra de ouro</h2>
+<p>Pare, desconfie e confirme por outro caminho. Golpe sempre tem pressa.</p>
+</section>
+
+<a class="botao botao-principal" th:href="@{/mensagem}">Analisar uma mensagem</a>
+<a class="botao" th:href="@{/}">← Voltar ao início</a>
+</main>
+<footer th:replace="~{fragmentos :: rodape}"></footer>
+</body>
+</html>
