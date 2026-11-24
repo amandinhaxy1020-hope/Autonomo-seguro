@@ -7,5 +7,18 @@
 <footer th:fragment="rodape" class="rodape">
 <p>Este site não guarda suas mensagens nem seus links.</p>
 </footer>
+<th:block th:fragment="pwa">
+<link rel="manifest" th:href="@{/manifest.json}" crossorigin="use-credentials">
+<meta name="theme-color" content="#2d6a4f">
+<link rel="icon" type="image/png" th:href="@{/icone-192.png}">
+<link rel="apple-touch-icon" th:href="@{/icone-192.png}">
+<script>
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function () {
+		navigator.serviceWorker.register('/sw.js');
+	});
+}
+</script>
+</th:block>
 </body>
 </html>
